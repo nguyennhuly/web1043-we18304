@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="app.js"></script>
+    
 </head>
 <body>
+    <h2>Nhập số nguyên tố d = </h2>
+    <input type="number" id="number">
+    <button onclick="tinhtoan()" >Tính toán</button>
     <script>
-        let d = prompt("Nhap so nguyen d ");
-        let result = c+d ;
-        alert(result);
-        console.log(result);
-
+        function tinhtoan(){
+        //nhap so nguyen d tu ban phim
+        var d = parseInt(document.getElementById("number").value);
+        //khai bao result = c+d
+        let result = c + d;
+        //in ra ket qua
+        alert("C=" + c +"+ D=" + d " kết quả =" + result);
+        //hien thi ket qua
+        console.log("C= " + c + " + D=" + d + "kết quả= " +result);
+        }
     </script>
   
 </body>
