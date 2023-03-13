@@ -1,2 +1,11 @@
-let arr=["tue","thu","sat","nine"]; 
-arr.splice(1,3,"mon","we","fri","sun")
+let a=["tue","thu","sat","nine"]; 
+
+a.pop("nine");
+a.splice(0,0,"mon");
+a.splice(2,0,"we");
+a.splice(4,0,"fri");
+
+a.push("sun");
+
+console.log(a);
+ 
