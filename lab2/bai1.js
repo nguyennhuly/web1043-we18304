@@ -20,8 +20,8 @@
         //delta>0
         let x1 = (-b +Math.sqrt(delta))/(2*a);
         let x2 = (-b -Math.sqrt(delta))/(2*a);
-        document.writeln(`nghiem x1 = $[x1]`);
-        document.writeln(`nghiem x2 = $[x2]`);
+        document.write("nghiem x1 = "+x1);
+        document.write(" nghiem x2 = "+x2);
 
     }
 
