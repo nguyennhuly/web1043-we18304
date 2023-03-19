@@ -7,7 +7,7 @@ do{
     console.log("0.thoát");
     console.log("----------------------------------")
 
-let chon = parseInt(prompt("Mời chọn chức năng")) ;
+ let chon = parseInt(prompt("Mời chọn chức năng")) ;
 
 switch(chon){ 
     case 1:

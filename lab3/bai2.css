@@ -1,0 +1,19 @@
+.tong{
+  
+    background-color:pink;
+    width: 400px;
+    height: 400px;
+    color: white;
+}
+
+#tinh{
+    width: 300px;
+    height: 40px;
+    margin: 30px;
+
+}
+.phu>td>input{
+ 
+    width: 70px;
+    height: 60px;
+}
