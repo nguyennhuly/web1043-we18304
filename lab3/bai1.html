@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,33 @@
     <title>Document</title>
     <script src="bai1.js"></script>
 </head>
+
 <body>
-    
+    <script>
+        let chon;
+        do {
+            chon = parseInt(prompt("\t\t\tmenu \n Mời chọn chức năng \n 1.Tính điểm trung bình (switch case) \n 2.Tính điểm trung bình (if else) \n 0.thoát "))
+
+            switch (chon) {
+                case 1:
+                alert(diemtb_1());
+                    break;
+                case 2:
+                alert(diemtb_2());
+
+                    break;
+                case 0:
+                alert("thoat chuong trinh");
+                    break;
+
+                default:
+                    alert("ban nhap sai chuc nang 0-2 !!");
+
+            }
+         
+        } while (chon != 0);
+
+    </script>
 </body>
+
 </html>
