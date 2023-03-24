@@ -48,6 +48,7 @@ function diemtb_2(){
         let ly  = parseFloat(prompt("moi nhập điểm lý"));
         let hoa = parseFloat(prompt("moi nhập điểm hóa "));
         let sinh = parseFloat(prompt("moi nhập điểm sinh "));
+        
         if(0<=toan<=10 && 0<=ly<=10 && 0<=hoa<=10 && 0<=sinh<=10){
             //tinh trung binh cong
             var diemtb = (toan+ly+hoa+sinh)/4;
