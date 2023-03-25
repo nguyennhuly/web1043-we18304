@@ -6,7 +6,7 @@ let gt = prompt('Mời nhập giới tính (nam hoặc nữ):');
  let arr = hvt.split(" ");
  
         let ho = arr[0];
-        let tenDem =arr.slice(1,arr.length -1).join(" ");
+        let tenDem =arr.slice(1,arr.length -1).join(" "); //(join nối ptu thành chuỗi)
         let ten = arr [arr.length-1];
 
 //in ra 
