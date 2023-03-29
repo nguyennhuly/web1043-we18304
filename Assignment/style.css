@@ -4,7 +4,7 @@ body{
 }
 .continue{
     width: 100%;
-    height: 10000px;
+    height: 3800px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ marquee{
 .menu{
     
     height: 50px;
-    background-color: rgb(211, 64, 35);
+    background-color:brown;
 
 }
 .menu>nav>ul>li>a{
@@ -63,6 +63,7 @@ marquee{
     
 }
 h2{
+    padding: 20px;
    color: brown;
    
 }
@@ -78,10 +79,11 @@ h2{
 }
 
 .doan2{
-  
+   
     display: flex;
+    
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 #con2{
     display: flex;
@@ -96,14 +98,15 @@ h2{
     display: flex;
 
 }
-#phai>img{
-    height: 200px;
-}
 .doan3{
     display: flex;
+    
     flex-direction: row;
     justify-content: center;
     padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color:  bisque;
 }
 #con3>img{
     display: flex;
@@ -126,16 +129,66 @@ h2{
     margin: 10px;
 }
 #con5{
-    background-color: aqua;
+    background-color:white;
     display: flex;
     flex-direction: row;
     width: 100px;
     height: 120px;
     margin: 5px;
 }
+.doan6{
+    padding-top: 90px;
+    padding-bottom: 90px;
+   
+    display: flex;
+    justify-content: center;
+
+}
+#con6{
+    display: flex;
+    margin: 5px;
+    width: 290px;
+    height: 400px;
+    flex-direction: row;
+    background-color: antiquewhite;
+
+}
+#con6>img{
+    width: 290px;
+    height: 400px;
+
+}
+.doan7{
+    background-color:bisque;
+    display: flex;
+    padding: 80px;
+    padding-bottom:150px ;
+    justify-content: center;
+
+}
+#con7{
+    justify-content: center;
+   
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+#con8{
+    justify-content: center;
+    margin: 40px;
+}
+#con8>input{
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    width: 400px;
+    height: 30px;
+
+
+}
 .duoi{
     background-color: brown;
-    height: 300px;
+    height: 350px;
 
 }
 .menu :hover{
