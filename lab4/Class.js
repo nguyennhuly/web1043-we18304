@@ -18,7 +18,7 @@ class Student {
     // Phương thức tính số tuổi hiện tại theo năm
     getTinhTuoiTheoNam() {
         const ngaysinh = new Date(this.dob);
-        const hientai =new Date ();
+        const hientai =new Date();
         const age = hientai - ngaysinh;
         return Math.floor(age / (1000 * 60 * 60 * 24 * 365));
         
@@ -34,7 +34,7 @@ class Student {
     }
   }
   
-  // Tạo danh sách studentList
+  // Tạo danh sách 
   const studentList = [
     new Student(1,'Ly','Nguyễn','WEB01','ly@gmail.com','0933928111','2004-08-12'),
     new Student(2,'An','Trần','WEB02','an@gmail.com','0936432222','1990-04-01'),
@@ -46,13 +46,13 @@ class Student {
   // Sắp xếp danh sách sinh viên theo thứ tự từ thấp đến cao theo số tuổi tính theo ngày
   studentList.sort((a, b) => a.getTinhTuoiTheoNgay() - b.getTinhTuoiTheoNgay());
   
-  // In ra danh sách sinh viên theo thứ tự từ thấp đến cao theo số tuổi tính theo ngày
+  // In ra 
   console.log('Danh sách sinh viên theo thứ tự từ thấp đến cao theo số tuổi tính theo ngày:');
   studentList.forEach(student => console.log(`${student.getFullName()}, ${student.getTinhTuoiTheoNam()} tuổi (${student.getTinhTuoiTheoNgay()} ngày tuổi)`));
   
   // Lấy kích thước màn hình
-  var rong = window.screen.width;
-  var dai = window.screen.height;
+  var rong = window.screen.width; //tính trả về chiều rộng màn hình
+  var dai = window.screen.height; //tính trả về chiều dài màn hình
 
- // In thông tin kích thước màn hình ra console
+ // In ra thông tin 
  console.log("Kích thước màn hình là " + rong + "x" + dai + " pixels."); 
