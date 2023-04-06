@@ -11,14 +11,13 @@ body{
 }
 .banner>header>img{
     width: 100%;
-    height: 400px;
+    height: 350px;
     
 
 }
 marquee{
-   
-    height: 20px ;
     color: brown;
+    height: 20px;
 }
 .menu{
     
@@ -46,7 +45,7 @@ marquee{
 #trai{
     flex-basis: 40%;
     justify-content: center;
-    background-color: rgb(255, 184, 170);
+    background-color: rgb(255, 222, 215);
 }
 #phai{
     flex-direction: column;
@@ -88,11 +87,29 @@ h2{
 #con2{
     display: flex;
     flex-direction: row;
-    width: 200px;
-    height: 170px;
-    background-color: brown;
+    width: 250px;
+    height: 180px;
+    background-color:white;
     margin: 10px;
  
+}
+.con22{
+    display: flex;
+    flex-direction: row;
+}
+.con22>img{
+    width: 130px;
+    height: 170px;
+    margin: 5px;
+}
+.con22>a{
+    color: brown;
+    margin: 10px;
+    text-decoration: none; /*bỏ dấu gạch chân */
+}
+
+.con22:hover{
+    background-color: bisque;
 }
 .noidung>img{
     display: flex;
@@ -123,18 +140,29 @@ h2{
 #con4{
     display: flex;
     flex-direction: column;
-    background-color: brown;
-    width: 250px;
+    background-color: antiquewhite;
+    width: 300px;
     height: 120px;
     margin: 10px;
 }
 #con5{
-    background-color:white;
+  
     display: flex;
     flex-direction: row;
-    width: 100px;
-    height: 120px;
     margin: 5px;
+}
+#con5>img{
+    width: 100px;
+    height: 110px;
+}
+#con5>a{
+    padding-top: 10px;
+    color: brown;
+    margin: 5px;
+    text-decoration: none;
+}
+#con4:hover{
+    background-color: white;
 }
 .doan6{
     padding-top: 110px;
@@ -158,39 +186,73 @@ h2{
     height: 400px;
 
 }
+#con6>p{
+    color: brown;
+   padding-top: 40px;
+   margin: 5px;
+}
 .doan7{
     background-color:bisque;
     display: flex;
     padding: 80px;
-    padding-bottom:100px ;
+    height: 425px;
     justify-content: center;
 
 }
-#con7{
-    justify-content: center;
-   
-    display: flex;
-    width: 600px;
-    height: 400px;
+.doan7 form{
+   width: 500px;
+   height: 400px;
+    background-color: white;
+    border: 1px solid brown;
+    border-radius: 50px;
 }
-#con8{
-    justify-content: center;
-    margin: 40px;
+table tr td  input{
+    margin: 10px;
 }
-#con8>input{
-    display: flex;
-    margin: 40px;
-    flex-direction: column;
-    width: 400px;
+#nut{
+    
+    border-radius: 20px;
+    border: 3px solid brown;
+    width: 80px;
     height: 30px;
-
-
+    box-shadow: 0px 0px 5px brown;
+    background-color: gainsboro;
 }
-.duoi{
+#nut:hover{
     background-color: brown;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+.duoi{
+     background-color: brown;
     height: 350px;
+    display: flex;
+    flex-direction: row;
 
 }
+
+.cuoi1{
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin:50px;
+    text-align: justify;
+    
+}
+.cuoi2{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-left: 200px;
+    text-align: justify;
+    color: white;
+}
+
 .menu :hover{
     color: black;
+  
 }
+
