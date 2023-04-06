@@ -1,4 +1,4 @@
-//baner chạy tự động 
+// chạy tự động 
 var index = 1;
 changeImage = function() {
     var imgs = ["/web1043-we18304//Assignment/img/bia.png", "/web1043-we18304//Assignment/img/biaaa.jpg","/web1043-we18304//Assignment/img/biaaaaaaaa.jpg"];
@@ -9,7 +9,6 @@ changeImage = function() {
     }
 }
 setInterval(changeImage,2000);
-//
 
 
 
@@ -18,7 +17,9 @@ setInterval(changeImage,2000);
 
 
 
-//điền thông tin người dùng 
+
+
+//điền thông tin người dùng để đặt hàng
 function send(){
     var arr = document.getElementsByTagName('input');
     var hoten = arr[0].value;

@@ -53,7 +53,7 @@ marquee{
     background-color: white;
 }
 .doan1{
-    background-color: bisque;
+    background-color: rgb(255, 238, 218);
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -109,7 +109,8 @@ h2{
 }
 
 .con22:hover{
-    background-color: bisque;
+    background-color:rgb(255, 238, 218);
+    box-shadow: 0px 0px 10px rgb(234, 60, 60);
 }
 .noidung>img{
     display: flex;
@@ -123,7 +124,7 @@ h2{
     padding: 20px;
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color:  bisque;
+    background-color: rgb(255, 238, 218);
 }
 #con3>img{
     display: flex;
@@ -140,8 +141,7 @@ h2{
 #con4{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
-    width: 300px;
+    background-color:rgb(255, 255, 235);
     height: 120px;
     margin: 10px;
 }
@@ -163,6 +163,7 @@ h2{
 }
 #con4:hover{
     background-color: white;
+    box-shadow: 0px 0px 5px rgb(249, 83, 83);
 }
 .doan6{
     padding-top: 110px;
@@ -178,7 +179,7 @@ h2{
     width: 290px;
     height: 400px;
     flex-direction: row;
-    background-color: antiquewhite;
+    background-color:rgb(255, 238, 218);
 
 }
 #con6>img{
@@ -192,7 +193,7 @@ h2{
    margin: 5px;
 }
 .doan7{
-    background-color:bisque;
+    background-color:rgb(255, 238, 218);
     display: flex;
     padding: 80px;
     height: 425px;
@@ -253,6 +254,6 @@ table tr td  input{
 
 .menu :hover{
     color: black;
-  
+   
 }
 
