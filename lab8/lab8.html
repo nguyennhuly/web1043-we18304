@@ -12,7 +12,7 @@
         <h1>KIẾM KHÁCH SỐ 1 | THỎ BẢY MÀU</h1>
         <div id="player">
             <video  id="myplayer" width="640px " height="360px">
-                <source src="/web1043-we18304/lab8/video/KIẾM KHÁCH SỐ 1 _ THỎ BẢY MÀU.mp4" type="video/mp4">
+                <source src="/web1043-we18304/lab8/video/thobaymau.mp4" type="video/mp4">
             </video>
             <div id="controls">
                 <button onclick="playPause()">Play/Pause</button>
@@ -26,14 +26,16 @@
     </div>
     <script>
         var player = document.getElementById("myplayer");
-
         function playPause(){
-            if (player.paused) {player.play();}
-            else {player.pause();}
+            if (player.paused){
+                player.play();
+            }else {
+                player.pause();}
         }
         function stopVideo(){
             player.pause();
-            if(player.currentTime){player.currentTime = 0; }
+            if(player.currentTime){
+                player.currentTime = 0; }
         }
         function replayVideo(){
             player.currentTime = 0;
@@ -48,8 +50,10 @@
             player.volume = parseFloat(player.volume - 0.1).toFixed(1);
         }
         function muteVolume(){
-            if(player.muted){player.muted=false;}
-            else {player.muted=true;}
+            if(player.muted){
+                player.muted=false;}
+            else {
+                player.muted=true;}
         }
     </script>
 </body>
