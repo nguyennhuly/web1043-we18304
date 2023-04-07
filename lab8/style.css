@@ -1,0 +1,26 @@
+#container{
+    background-color: rgb(214, 213, 212);
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+}
+button{
+    margin-right: 5px;
+}
+#myplayer{
+    border: 5px solid white;
+    border-bottom: 20px solid white;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+#controls>button{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    
+}
+#controls>button:hover{
+    background-color: bisque;
+    color: brown;
+    box-shadow: 0px 0px 5px brown;
+}
