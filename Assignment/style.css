@@ -206,13 +206,13 @@ h2{
 }
 .doan7 form{
    width: 500px;
-   height: 400px;
+   height: 450px;
     background-color: white;
     border: 1px solid brown;
     border-radius: 50px;
 }
 table tr td  input{
-    margin: 10px;
+    margin: 15px;
 }
 #nut{
     
@@ -252,7 +252,7 @@ table tr td  input{
     display: flex;
     flex-direction: column;
     margin: 50px;
-    margin-left: 200px;
+    margin-left: 100px;
     text-align: justify;
     color: white;
 }

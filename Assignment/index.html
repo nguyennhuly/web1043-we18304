@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/web1043-we18304/Assignment/style.css">
-    <script src="/web1043-we18304/Assignment/app.js"></script>
+   
 </head>
 
 <body>
@@ -48,7 +48,7 @@
                         <div id="con1" ><img src="/web1043-we18304//Assignment/img/aa.jpg" alt=""></div>
                         <div id="con1" ><img src="/web1043-we18304//Assignment/img/aaa.jpg" alt=""></div>
                     </div>
-                    <h2 id="title2">CHÀO MỪNG ĐẾN VỚI C3E VIỆT NAM </h2>
+                    <h2 id="title2">CHÀO MỪNG ĐẾN VỚI 3CE VIỆT NAM </h2>
                     <div class="doan2">
                         <div onmouseover="hover()" onmouseout="out()" class="con2" id="tem1">
                             <div class="con22"> <img src="/web1043-we18304/Assignment/img/1.jpg" alt="">
@@ -112,43 +112,45 @@
                     </div>
                     
                     <div class="doan7" >
-                        <form id="title4" >
-                            <h2> Nhập thông tin để đặt hàng  </h2>
-                            <table style="margin: auto;">
-                                <tr>
-                                    <td>Họ và tên</td>
-                                    <td> <input type="text" id="hoten"></td>
-                                </tr>
-                                <tr>
-                                    <td>Tuổi</td>
-                                    <td> <input type="text" id="tuoi"></td>
-                                </tr>
-                                <tr>
-                                    <td>Địa chỉ</td>
-                                    <td> <input type="text" id="diachi"></td>
-                                </tr>
-                                <tr>
-                                    <td>Giới tính</td>
-                                    <td> <input type="radio" name="gioitinh" value="nam" checked>Nam
-                                         <input type="radio" name="gioitinh" value="nu">Nữ
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Sản phẩm</td>
-                                    <td>
-                                        <input type="checkbox" value="son">Son
-                                        <input type="checkbox" value="mypham">mỹ phẩm
-                                        <input type="checkbox" value="skincare">skincare
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td><input id="nut" onclick="send()"  type="button" value="Đặt hàng"></td>
-                                    <td><input id="nut" onclick="resetForm()" type="button" value="Reset"></td>
-                                </tr>
-
-                            </table>
-                        </form>
+                       
+                        <form  id="title4" id="order-form" onsubmit="return validateForm()">
+                            <h2> Nhập thông tin đặt hàng </h2>
+                            <table>
+                            <tr>
+                                <td> <label for="name">Họ tên:</label></td>
+                                <td><input type="text" id="name" name="name"></td>
+                            </tr>
+                          
+                            <tr>
+                                <td><label for="address">Địa chỉ:</label></td>
+                                <td> <input type="text" id="address" name="address"></td>
+                            </tr>
+                      
+                            <tr>
+                                <td><label for="phone">Số điện thoại:</label></td>
+                                <td> <input type="text" id="phone" name="phone"></td>
+                            </tr>
+                           <tr>
+                            <td> <label for="email">Địa chỉ email:</label></td>
+                            <td> <input type="email" id="email" name="email"></td>
+                           </tr>
+                           
+                           <tr>
+                            <td> <label for="payment-method">Phương thức thanh toán:</label></td>
+                            <td><select id="payment-method" name="payment-method">
+                                <option value="">-- Chọn phương thức thanh toán --</option>
+                                <option value="Tiền mặt">Tiền mặt</option>
+                                <option value="Thẻ tín dụng">Thẻ tín dụng</option>
+                              </select></td>
+                           </tr>
+                         
+                            <tr>
+                                <td>  <input id="nut" type="submit" value="Đặt hàng"></td>
+                            </tr>
+                         
+                        </table>
+                          </form>
+                     
 
                     </div>
 
@@ -184,6 +186,7 @@
 
         </div>
     </center>
+    <script src="/web1043-we18304/Assignment/app.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 // chạy tự động 
 var index = 1;
-changeImage = function() {
+function changeImage() {
     var imgs = ["/web1043-we18304//Assignment/img/bia.png", "/web1043-we18304//Assignment/img/biaaa.jpg","/web1043-we18304//Assignment/img/biaaaaaaaa.jpg"];
     document.getElementById('img').src = imgs[index];
     index++;
@@ -112,55 +112,68 @@ function _out3(){
 
 //
 
-
+ 
 //điền thông tin người dùng để đặt hàng
-function send(){
-    var arr = document.getElementsByTagName('input');
-    var hoten = arr[0].value;
-    var tuoi = arr[1].value;
-    var diachi = arr[2].value;
-    var check1 = arr[5].checked;
-    var check2 = arr[6].checked;
-    var check3 = arr[7].checked;
-    var gioitinh = "";
-
-    var sanpham = "";
-    if(arr[3].checked){
-        gioitinh ="nam";
-    }else{
-        gioitinh= "nu";
+function validateForm() {
+    // Lấy thông tin từ người dùng
+    let hoten= document.getElementById("name").value;
+  
+    let diachi = document.getElementById("address").value;
+  
+    let sdt = document.getElementById("phone").value;
+  
+    let email = document.getElementById("email").value;
+  
+    let phuongthucthanhtoan = document.getElementById("payment-method").value;
+  
+  
+   
+    // Kiểm tra tính hợp lệ của thông tin người dùng
+    let loi = [];
+  
+    if (!hoten) {
+      loi.push("Vui lòng nhập họ tên của bạn");
     }
-    for(var i=5; i<=7;i++){
-       if( arr[i].checked){
-        sanpham = sanpham + arr[i].value+" ";
-        
-       }
+  
+    if (!diachi) {
+      loi.push("Vui lòng nhập địa chỉ của bạn");
     }
-
-    if(hoten =="" || tuoi =="" || diachi ==""){
-        alert("Bạn nhập thiếu thông tin!!!!");
-        return;
-
+  
+    if (!sdt) {
+      loi.push("Vui lòng nhập số điện thoại của bạn");
+    } else if (!/^\d{10}$/.test(sdt)) {
+      loi.push("Số điện thoại không hợp lệ");
     }
-    if(isNaN(tuoi)){// neu nguoi dung nhap kh phải là số 
-        alert("Bạn nhập sai!! vui lòng nhập số tuổi ");
-        return;
+  
+    if (email && !/^\S+@\S+\.\S+$/.test(email)) {
+      loi.push("Địa chỉ email không hợp lệ");
     }
-
-    if(check1||check2||check3){
-       
-    }else{
-        alert("Bạn chọn ít nhất 1 món đồ để mua!");
-        return;
+  
+    if (!phuongthucthanhtoan) {
+      loi.push("Vui lòng chọn phương thức thanh toán");
     }
+  
+    // Nếu có lỗi, hiển thị thông báo lỗi và ngăn người dùng gửi đơn hàng
+    if (loi.length > 0) {
+      alert(loi.join("\n")); // kết hợp các phần tử của một mảng thành một chuỗi.
+      return false;
+    } else {
+      // Nếu không có lỗi
+      alert("Thông tin khách hàng đã nhập :"+ "\n" +hoten+ "\n"+ diachi+ "\n" +sdt+"\n"+ email+"\n"+ phuongthucthanhtoan);
+      alert("Chúc mừng bạn đã đặt hàng thành công!!!!")
+    }
+  }
+      
 
-    var choice =confirm('Thông tin khách hàng đã nhập:\n'+hoten+"\n" +tuoi+"\n" + diachi+ "\n"+ gioitinh+"\n" + sanpham);
-        if(choice==1){
-            alert("Chúc mừng bạn đã đặt hàng thành công")
-        }    
+  var myMouseover = document.querySelectorAll("#row-mouseover");
+for (var i = 0; i < myMouseover.length; i++) {
+  myMouseover[i].addEventListener("mouseover", function(event) {
+    event.currentTarget.style.border = "3px solid #fe7a7b";
+    event.currentTarget.style.transform = "scaleY(1.1)"
+
+  });
+  myMouseover[i].addEventListener("mouseout", function(event) {
+    event.currentTarget.style.border = "none";
+    event.currentTarget.style.transform = "scaleY(1.0)"
+  });
 }
-//được sử dụng để xóa tất cả các giá trị đã nhập vào các trường trong biểu mẫu.
-function resetForm(){
-    document.getElementsByTagName('form')[0].reset();
-}
-
